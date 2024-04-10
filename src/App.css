@@ -1,0 +1,82 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.TitleBar {
+  margin-bottom: 32px;
+}
+
+.InputContainer {
+  margin-bottom: 32px;
+}
+
+.TableInputContainer {
+  margin-bottom: 16px;
+}
+
+.TableNameInput {
+  height: 1.4rem;
+}
+
+.DataInputContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ColumnNames, .ColumnData {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.TextInput, .SelectInput {
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.TextInput {
+  height: 1.4rem;
+}
+
+.SelectInput {
+  height: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.ResultTextbox {
+  min-width: 300px;
+  width: 88%;
+  min-height: 400px;
+  background-color: black;
+  color: rgb(0, 199, 0);
+  font-size: 0.9rem;
+}
+
+.ResultAmountContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.ResultAmountInput {
+  height: 1.8rem;
+}
+
+.TheButton {
+  height: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.TheButton:hover {
+  cursor: pointer;
+}
