@@ -57,6 +57,7 @@ h1, h2 {
   background-color: black;
   color: rgb(0, 199, 0);
   font-size: 0.9rem;
+  font-family: "PT Mono", monospace;
 }
 
 .ResultAmountContainer {
