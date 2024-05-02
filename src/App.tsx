@@ -238,7 +238,8 @@ function App() {
       </div>
     </div>
 
-    <div className='outputContainer'>
+    <div className='OutputContainer'>
+      <button className='CopyButton'>Copy query</button>
       <textarea readOnly className="ResultTextbox" value="Your query will go here"/>
     </div>
     </>

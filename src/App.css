@@ -17,6 +17,13 @@ h1, h2 {
   margin-bottom: 32px;
 }
 
+.OutputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
 .TableInputContainer {
   margin-bottom: 16px;
 }
@@ -50,14 +57,24 @@ h1, h2 {
   height: 30px;
 }
 
-.ResultTextbox {
-  min-width: 300px;
+.CopyButton, .ResultTextbox {
+  min-width: 200px;
   width: 88%;
+  padding: 4px;
+  box-sizing: border-box;
+}
+
+.CopyButton:hover {
+  cursor: pointer;
+}
+
+.ResultTextbox {
   min-height: 400px;
   background-color: black;
   color: rgb(0, 199, 0);
   font-size: 0.9rem;
   font-family: "PT Mono", monospace;
+  resize: vertical;
 }
 
 .ResultAmountContainer {
