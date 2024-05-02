@@ -1,6 +1,6 @@
 function NameInput( {name}: {name: string} ) {
     return (
-        <input className="TextInput" type="text" placeholder={"Enter name for column " + name} defaultValue=""/>
+        <input className="TextInput" type="text" placeholder={"Name for column " + name} defaultValue=""/>
     )
 }
 

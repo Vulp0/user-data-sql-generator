@@ -1,4 +1,5 @@
 import './App.css';
+import './normalize.css';
 import NameInput from './NameInput';
 import DataInput from './DataInput';
 
@@ -184,7 +185,6 @@ function App() {
     <>
     <div className='TitleBar'>
       <h1>Random data generator 1.0</h1>
-      <h2>Gets random user data and returns a sql query</h2>
     </div>
 
     <div className='InputContainer'>
