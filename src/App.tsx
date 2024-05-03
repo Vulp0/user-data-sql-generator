@@ -179,6 +179,25 @@ function displayQuery() {
   }
 }
 
+function copyToClipboard(): void{
+  let CopyButton: HTMLButtonElement | null = document.querySelector(".CopyButton");
+
+  Textbox = document.querySelector("textarea");
+  Textbox?.select();
+  Textbox?.setSelectionRange(0, 99999999);
+
+  let text: string = Textbox?.value as string;
+
+  navigator.clipboard.writeText(text);
+ 
+  if(CopyButton) {
+    CopyButton.textContent = "Text has been copied";
+    setTimeout(() => {
+      CopyButton.textContent = "Copy query";
+    }, 3000);
+  }
+}
+
 function App() {
 
   return (
@@ -239,7 +258,7 @@ function App() {
     </div>
 
     <div className='OutputContainer'>
-      <button className='CopyButton'>Copy query</button>
+      <button onClick={copyToClipboard} className='CopyButton'>Copy query</button>
       <textarea readOnly className="ResultTextbox" value="Your query will go here"/>
     </div>
     </>
