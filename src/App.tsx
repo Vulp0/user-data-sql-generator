@@ -73,57 +73,57 @@ async function callSaul() {
 
   // console.log(data); //this is for testing
   data.forEach((currentUser: any) => {
-    let arr: string | number [] = [];
+    let arr: (string | number)[] = [];
     
     columnData.forEach((propName) => {
       switch(propName) {
         case "firstName":
-          arr.push(currentUser.name.first);
+          arr.push(`'${currentUser.name.first}'`);
         break;
         case "lastName":
-          arr.push(currentUser.name.last);
+          arr.push(`'${currentUser.name.last}'`);
         break;
         case "streetNumber":
-          arr.push(currentUser.location.street.number);
+          arr.push(`'${currentUser.location.street.number}'`);
         break;
         case "streetName":
-          arr.push(currentUser.location.street.name);
+          arr.push(`'${currentUser.location.street.name}'`);
         break;
         case "city":
-          arr.push(currentUser.location.city);
+          arr.push(`'${currentUser.location.city}'`);
         break;
         case "state":
-          arr.push(currentUser.location.state);
+          arr.push(`'${currentUser.location.state}'`);
         break;
         case "country":
-          arr.push(currentUser.location.country);
+          arr.push(`'${currentUser.location.country}'`);
         break;
         case "postCode":
-          arr.push(currentUser.location.postcode);
+          arr.push(`'${currentUser.location.postcode}'`);
         break;
         case "timezoneOffset":
-          arr.push(currentUser.location.timezone.offset);
+          arr.push(`'${currentUser.location.timezone.offset}'`);
         break;
         case "email":
-          arr.push(currentUser.email);
+          arr.push(`'${currentUser.email}'`);
         break;
         case "username":
-          arr.push(currentUser.login.username);
+          arr.push(`'${currentUser.login.username}'`);
         break;
         case "password":
-          arr.push(currentUser.login.password);
+          arr.push(`'${currentUser.login.password}'`);
         break;
         case "birthDate":
-          arr.push(currentUser.dob.date);
+          arr.push(`'${currentUser.dob.date}'`);
         break;
         case "age":
           arr.push(currentUser.dob.age);
         break;
         case "phone":
-          arr.push(currentUser.phone);
+          arr.push(`'${currentUser.phone}'`);
         break;
         case "cell":
-          arr.push(currentUser.cell);
+          arr.push(`'${currentUser.cell}'`);
         break;
         default:
         break;
@@ -203,7 +203,7 @@ function App() {
   return (
     <>
     <div className='TitleBar'>
-      <h1>Random data generator 1.0</h1>
+      <h1>Random data generator 1.1</h1>
     </div>
 
     <div className='InputContainer'>
