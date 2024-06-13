@@ -139,7 +139,7 @@ async function callSaul() {
     resultQuery += ` (${userData[i]}),\n\t\t`;
   }
   
-  resultQuery += ` (${userData[userData.length - 1]})`;
+  resultQuery += ` (${userData[userData.length - 1]});`;
 
   displayQuery();
 };
